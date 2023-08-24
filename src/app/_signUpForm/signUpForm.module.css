@@ -1,0 +1,49 @@
+.FormContainer{
+    position: fixed;
+    top: 0px;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(109, 105, 105);
+    opacity: 80%;
+}
+
+.Form{
+    display: grid;
+    background-color: var(--dailyComponentColor);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border: solid;
+    padding: 15px;
+}
+
+.FormField{
+    margin: 15px;
+}
+
+.FormInput{
+    height: 30px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.SubmitButton{
+    background-color: var(--btnBackgroundColor);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+    justify-self: center;
+}
+
+.SubmitButton:hover{
+    box-shadow: var(--boxShadowEffect);
+}
+
+.Error{
+    color: red;
+}
