@@ -1,0 +1,18 @@
+.HeaderContainer{
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    border-bottom: 2px solid;
+}
+
+.HeaderNavigation{
+    display: flex;
+    flex:1 1 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavLink{
+    text-decoration: none;
+    color: inherit;
+}

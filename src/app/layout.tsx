@@ -1,7 +1,10 @@
+'use client'
 import Head from 'next/head'
 import './globals.css'
 import type { Metadata } from 'next'
 import {Open_Sans} from 'next/font/google'
+import ThemeContextProvider from './_globalContext/_ThemeContext/themeContext';
+import Header from "./_headerComponent/header";
 
 const defaultFont = Open_Sans({
     subsets:['latin'],
@@ -11,6 +14,16 @@ export const metadata: Metadata = {
   title: 'Budgeting App',
   description: 'This is a simple budgeting application',
   viewport:'width = device-width, initial-scale = 1.0'
+}
+
+export const theme = (toogleTheme:boolean)=>{
+
+  if(toogleTheme){
+      return 'DarkTheme'
+  }
+  else if(!toogleTheme){
+      return 'LightTheme'
+  }
 }
 
 export default function RootLayout({
@@ -30,7 +43,10 @@ export default function RootLayout({
         {/*<meta property="og:site_name" content="MarvinMudegu.com"/>*/}
       </Head>
       <body className={defaultFont.className}>
-          {children}
+          <ThemeContextProvider>
+            <Header/>
+             {children}
+          </ThemeContextProvider>
       </body>
     </html>
   )

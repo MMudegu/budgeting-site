@@ -43,6 +43,11 @@ export default function LoginForm({displayLoginForm}:{displayLoginForm:boolean})
 
     const [state,dispatch] = useReducer(reducer,initState);
 
+    if(storedUserDetails.Error === 'userNotFound'){
+        return <SignUpForm displaySignUpForm={true}/>
+    }
+
+
     const handleSubmit = (event:React.FormEvent<HTMLFormElement>,userDetails:FormDataType)=>{
         event.preventDefault();
         if(userDetails.password !== storedUserDetails.password)
@@ -77,12 +82,6 @@ export default function LoginForm({displayLoginForm}:{displayLoginForm:boolean})
         setShowLoginForm(false);
     }
     
-
-
-    if(storedUserDetails.Error === 'userNotFound'){
-        return <SignUpForm displaySignUpForm={true}/>
-    }
-
     return(
         displayLoginForm && showLoginForm ?
         <div className={signUpFormStyles.FormContainer}>

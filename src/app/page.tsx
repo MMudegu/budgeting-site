@@ -1,17 +1,17 @@
 'use client'
 import { useState } from "react";
 import LoginForm from "./_loginForm/loginForm";
-
-const modalText = `Login was successful welcome`
+import { useThemeContext } from "./_globalContext/_ThemeContext/themeContext";
+import { theme } from "./layout";
 
 export default function HomePage(){
-    const [showLoginForm,setShowLoginForm] = useState(true);
-
- 
+    const {toogleTheme} = useThemeContext();
+     
     return(
         <>  
-            <LoginForm displayLoginForm={showLoginForm}/>
-            <h1>Hello World</h1>
+            <LoginForm displayLoginForm={false}/>
+            <div className={theme(toogleTheme)}>
+            </div>
         </>
     )
 }
