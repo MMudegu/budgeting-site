@@ -1,8 +1,8 @@
 'use client'
-import { useState } from "react";
 import LoginForm from "./_loginForm/loginForm";
 import { useThemeContext } from "./_globalContext/_ThemeContext/themeContext";
 import { theme } from "./layout";
+import HeroComponent from "./_heroSection/heroComponent";
 
 export default function HomePage(){
     const {toogleTheme} = useThemeContext();
@@ -10,8 +10,9 @@ export default function HomePage(){
     return(
         <>  
             <LoginForm displayLoginForm={false}/>
-            <div className={theme(toogleTheme)}>
-            </div>
+            <main className={theme(toogleTheme)}>
+                <HeroComponent/>
+            </main>
         </>
     )
 }

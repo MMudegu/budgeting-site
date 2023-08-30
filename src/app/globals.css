@@ -5,8 +5,8 @@
   --shoppingComponentColor: #EBBF2F;
   --modalColor: #3BEBAB;
   --btnBackgroundColor: #F4CE14;
-  --generalLightBackgroundColor: #f4e6ab;
-  --generalDarkBackgroundColor: rgb(72, 66, 66);
+  --generalLightBackgroundColor: #F3E6FF;
+  --generalDarkBackgroundColor: #121212;
   --boxShadowEffect: 0px 0px 100em inset red;
 }
 
@@ -20,16 +20,12 @@
   background-color: var(--generalLightBackgroundColor);
   color: black;
   width: 100vw;
-  height: 100vh;
   display: flex;
-  flex: 1 1 100%;
 }
 
 .DarkTheme{
   background-color: var(--generalDarkBackgroundColor);
   color: white;
   display: flex;
-  flex: 1 1 100%;
   width: 100vw;
-  height: 100vh;
 }
