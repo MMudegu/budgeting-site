@@ -20,12 +20,12 @@
   background-color: var(--generalLightBackgroundColor);
   color: black;
   width: 100vw;
-  display: flex;
+  display: grid;
 }
 
 .DarkTheme{
   background-color: var(--generalDarkBackgroundColor);
   color: white;
-  display: flex;
+  display: grid;
   width: 100vw;
 }

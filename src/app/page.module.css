@@ -1,0 +1,15 @@
+.MotivationSectionContainer{
+    display: grid;
+    border: groove 2px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    place-items: center;
+    place-content: center;
+    justify-self: center;
+    background-color: #A3A5E6;
+    max-width: 700px;
+    border-radius: 10px;
+}

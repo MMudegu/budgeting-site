@@ -3,7 +3,6 @@ import ToogleButton from '../_toogleButton/toogleButton'
 import headerStyles from './header.module.css'
 import { theme } from '../layout';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Header(){
 
@@ -12,7 +11,7 @@ export default function Header(){
     return(
         <header className={theme(toogleTheme)}>
             <span className={headerStyles.HeaderContainer}>
-                <ToogleButton initialState={toogleTheme} toogleState={setToogleTheme}/>
+                <ToogleButton initialState={toogleTheme} setToogleState={setToogleTheme}/>
                 <nav className={headerStyles.HeaderNavigation}>
                     <Link href={'./ShoppingPage'} className={headerStyles.NavLink}>Shopping</Link>
                     <Link href={'./WeeklyPage'} className={headerStyles.NavLink}>Weekly</Link>

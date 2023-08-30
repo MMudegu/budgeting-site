@@ -1,0 +1,34 @@
+.FooterContainer{
+    display: grid;
+    border-top: solid 2px;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 30vh;
+    width: 100vw;
+    place-content: center;
+    place-items: center;
+    color: white;
+}
+
+.NavLinkContainer{
+    display: grid;
+}
+
+.NavLink{
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.NavLink:hover{
+    text-decoration: underline;
+}
+
+.PortfolioWebsiteLink{
+    text-decoration: none;
+    color: white;
+}
+
+.PortfolioWebsiteLink:hover{
+    text-decoration: underline;
+}

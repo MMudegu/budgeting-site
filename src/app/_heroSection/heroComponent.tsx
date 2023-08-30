@@ -19,7 +19,7 @@ const QuotesTile = ({quoteIndex}:{quoteIndex:number})=>{
     return(
         <div className={heroComponentStyles.QuoteTile}>
             <h4>Today's Quote &#129417;</h4>
-            <p>{quotes[quoteIndex].q}</p>
+            <p> &#8221; {quotes[quoteIndex].q} &#8221; </p>
             <p>{quotes[quoteIndex].a}</p>
         </div>
     )

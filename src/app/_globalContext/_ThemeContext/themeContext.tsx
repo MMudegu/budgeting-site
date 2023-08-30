@@ -13,7 +13,7 @@ const initialThemeContext = {
 const ThemeContext = createContext<ThemeContextType>(initialThemeContext);
 
 export default function ThemeContextProvider({children}:{children:ReactNode}){
-
+    
     const [toogleTheme,setToogleTheme] = useState(false);
 
     return(
