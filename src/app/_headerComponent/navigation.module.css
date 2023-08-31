@@ -1,0 +1,35 @@
+.NavContainer{
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px;
+}
+
+.HomeLink{
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+.HomeLink:hover{
+    text-decoration: underline;
+}
+
+.SignOutButton{
+    background-color: var(--btnBackgroundColor);
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+    justify-self: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.SignOutButton:hover{
+    box-shadow: var(--boxShadowEffect);
+}

@@ -77,7 +77,7 @@ export default function LoginForm({displayLoginForm}:{displayLoginForm:boolean})
         }
 
         
-        localStorage.setItem('isUserLoggedIn','true');
+        sessionStorage.setItem('isUserLoggedIn','true');
 
         setShowLoginForm(false);
     }

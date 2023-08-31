@@ -1,6 +1,6 @@
 .HeroComponentContainer{
     display: grid;
-    border: groove 3px;
+    border-bottom: groove 3px;
     padding-bottom: 20px;
 }
 

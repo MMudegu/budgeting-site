@@ -16,7 +16,7 @@ export default function Header(){
                     <Link href={'./ShoppingPage'} className={headerStyles.NavLink}>Shopping</Link>
                     <Link href={'./WeeklyPage'} className={headerStyles.NavLink}>Weekly</Link>
                     <Link href={'./MonthlyPage'} className={headerStyles.NavLink}>Monthly</Link>
-                    <Link href={'./AnnualyPage'} className={headerStyles.NavLink}>Annualy</Link>
+                    <Link href={'./AnnuallyPage'} className={headerStyles.NavLink}>Annually</Link>
                 </nav>
             </span>
         </header>

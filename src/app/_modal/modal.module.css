@@ -20,6 +20,9 @@
     min-height: 200px;
     align-content: center;
     justify-content: center;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .ModalButton{
@@ -27,6 +30,8 @@
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
+    width: 150px;
+    justify-self: center;
 }
 
 .ModalButton:hover{

@@ -23,7 +23,7 @@ export default function Footer(){
                     <Link href={'./ShoppingPage'} className={footerStyles.NavLink}>Shopping</Link>
                     <Link href={'./WeeklyPage'} className={footerStyles.NavLink}>Weekly</Link>
                     <Link href={'./MonthlyPage'} className={footerStyles.NavLink}>Monthly</Link>
-                    <Link href={'./AnnualyPage'} className={footerStyles.NavLink}>Annualy</Link>
+                    <Link href={'./AnnuallyPage'} className={footerStyles.NavLink}>Annually</Link>
                 </nav>
                 <h4>&copy; <a href='https://marvinmudegu.online' className={footerStyles.PortfolioWebsiteLink}>Marvin Mudegu</a></h4>
            </footer>

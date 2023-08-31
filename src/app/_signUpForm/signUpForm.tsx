@@ -62,6 +62,7 @@ export default function SignUpForm({displaySignUpForm}:{displaySignUpForm:boolea
         }
 
         localStorage.setItem('userDetails',JSON.stringify(userDetails));
+        sessionStorage.setItem('isUserLoggedIn','true');
 
         setShowSignUpForm(false);
         setShowModal(true);
