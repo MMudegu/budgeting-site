@@ -8,8 +8,9 @@
 
 .HomeLink{
     text-decoration: none;
-    margin-left: 10px;
-    color: white;
+    margin-left: 20px;
+    color: var(--btnBackgroundColor);
+    font-weight: 800;
 }
 .HomeLink:hover{
     text-decoration: underline;
@@ -22,7 +23,7 @@
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 55px;
     width: 150px;
     justify-self: center;
     text-align: center;

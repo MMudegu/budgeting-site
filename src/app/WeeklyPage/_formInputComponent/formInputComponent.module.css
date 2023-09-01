@@ -1,0 +1,119 @@
+.FormInputContainer{
+    display: grid;
+    border: groove 2px;
+    margin: 30px 0px 30px 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    justify-self: center;
+}
+
+.CurrencyType{
+    margin-left: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+.InputsContainer{
+    display: grid;
+    text-align: center;
+}
+.Inputs{
+    display: flex;
+    margin-top: 20px;
+}
+.DescriptionInput{
+    width: 250px;
+    height: 30px;
+    border: solid 2px;
+}
+.AmountInput{
+    width: 100px;
+    height: 30px;
+    border: solid 2px;
+}
+
+@media screen and (max-width:900px) {
+    .InputLabels{
+        align-self: center;
+    }
+    .DescriptionInput{
+        margin-left: 10px;
+    }
+    .AmountInput{
+        margin-left: 10px;
+    }
+    .ItemNumber{
+        margin-left: 10px;
+    }
+
+    .NotesArea{
+        width: 80vw;
+        margin-left: 10px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .InputsContainer{
+        display: grid;
+        grid-template-columns: repeat(3,0.3333fr);
+        text-align: center;
+        place-items: center;
+    }
+    .Inputs{
+        display: grid;
+        grid-template-rows: 0.1fr 0.9fr;
+    }
+    .DescriptionInput{
+        width: 350px;
+        height: 30px;
+    }
+    .AmountInput{
+        width: 100px;
+        height: 30px;
+    }
+    .ControlButtonsContainer{
+        display: flex; 
+        justify-self: center;
+        justify-content: space-around;
+    }
+    .NotesArea{
+        width: 60vw;
+        margin-left: 20vw;
+        margin-bottom: 100px;
+    }
+}
+
+.ControlButtons{
+    background-color: var(--btnBackgroundColor);
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+
+}
+
+.ControlButtons:hover{
+    box-shadow: var(--boxShadowEffect);
+}
+
+.NotesArea{
+    display: grid;
+    margin-top: 20px;
+}
+
+.TotalAmount{
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
+.NotesTextArea{
+    margin-top: 5px;
+    max-width: 35em;
+}

@@ -2,9 +2,11 @@
 import LoginForm from "../_loginForm/loginForm";
 import { useEffect, useState } from "react";
 import Navigation from "../_headerComponent/navigation";
+import { theme } from "../layout";
+import { useThemeContext } from "../_globalContext/_ThemeContext/themeContext";
 
 export default function ShoppingPage(){
-
+    const {toogleTheme} = useThemeContext();
     const [displayLoginForm,setDisplayLogInForm] = useState(true);
 
     useEffect(()=>{
@@ -17,7 +19,7 @@ export default function ShoppingPage(){
     },[])
 
     return(
-        <main>
+        <main className={theme(toogleTheme)}>
              <LoginForm displayLoginForm={displayLoginForm}/>
              <Navigation/>
         </main>
