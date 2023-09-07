@@ -6,6 +6,7 @@ import {Open_Sans} from 'next/font/google'
 import ThemeContextProvider from './_globalContext/_ThemeContext/themeContext';
 import Header from "./_headerComponent/header";
 import Footer from './_footerComponent/footer'
+import UserInputDataProvider from './_globalContext/_ThemeContext/userDataInput/userDataInput'
 
 const defaultFont = Open_Sans({
     subsets:['latin'],
@@ -45,9 +46,11 @@ export default function RootLayout({
       </Head>
       <body className={defaultFont.className}>
           <ThemeContextProvider>
-            <Header/>
-             {children}
-             <Footer/>
+            <UserInputDataProvider>
+                <Header/>
+                {children}
+                <Footer/>
+             </UserInputDataProvider>
           </ThemeContextProvider>
       </body>
     </html>

@@ -25,7 +25,7 @@ export default function Navigation(){
                 <Link href={'./'} className={navigationStyles.HomeLink}>Home</Link>
                 <button className={navigationStyles.SignOutButton} onClick={onClickHandler}>Delete User Details</button>
             </nav>
-            <Modal text={'Are you sure you want to delete your username and password?'} displayModal={displayModal} optionalFunction={deleteUserDetails}/>
+            <Modal text={'Your username and password have been deleted'} displayModal={displayModal} optionalFunction={deleteUserDetails}/>
         </div>
     )
 }

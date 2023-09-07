@@ -5,6 +5,7 @@ import Navigation from "../_headerComponent/navigation";
 import FormInputComponent from "./_formInputComponent/formInputComponent";
 import { theme } from "../layout";
 import { useThemeContext } from "../_globalContext/_ThemeContext/themeContext";
+import DataInputSummary from "./_formInputComponent/dataInputSummary";
 
 
 export default function WeeklyPage(){
@@ -25,6 +26,7 @@ export default function WeeklyPage(){
             <LoginForm displayLoginForm={displayLoginForm}/>
             <Navigation/>
             <FormInputComponent/>
+            <DataInputSummary title="Weekly Summary"/>
         </main>
     )
 }
