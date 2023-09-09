@@ -2,7 +2,7 @@
 
 import { useState, createContext, useContext } from "react";
 
-interface UserInputDataType{
+export interface UserInputDataType{
     description:string | number,
     amount:string | number,
 }

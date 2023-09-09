@@ -9,7 +9,7 @@ export default function DataInputSummary({title}:{title:string}){
 
     return(
         <div className={dataInputSummaryStyles.SummaryContainer}>
-            <h3>{title}</h3>
+            <h3>{`${title} Summary`}</h3>
             <div className={dataInputSummaryStyles.SummaryContentTitle}>
                 <h4><strong><em>Item</em></strong></h4>
                 <h4><strong><em>Description</em></strong></h4>
